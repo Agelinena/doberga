@@ -91,7 +91,7 @@ services:
       DOBERGA_SSO_CLIENT_ID: ${DOBERGA_SSO_CLIENT_ID}
       DOBERGA_SSO_CLIENT_SECRET: ${DOBERGA_SSO_CLIENT_SECRET}
       # Igual à Redirect URI cadastrada no provider do Authentik.
-      OIDC_REDIRECT_URI: ${DOBERGA_OIDC_REDIRECT_URI}
+      OIDC_REDIRECT_URI: ${DOBERGA_OIDC_REDIRECT_URI:-}
       # Opcional: endereço interno do Authentik (vazio = pelo endereço público).
       OIDC_INTERNAL_URL: ${DOBERGA_OIDC_INTERNAL_URL:-}
       OIDC_REQUIRED_GROUP: ${DOBERGA_USERS_GROUP:-doberga_users}
